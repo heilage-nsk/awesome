@@ -1,4 +1,5 @@
 builddir=.build-$(shell hostname)-$(shell gcc -dumpmachine)-$(shell gcc -dumpversion)
+CMAKE_ARGS:="-DLUA_LIBRARY=/usr/lib/liblua.so\;dl"
 
 ifeq (,$(VERBOSE))
     MAKEFLAGS:=$(MAKEFLAGS)s
